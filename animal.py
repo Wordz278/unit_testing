@@ -4,20 +4,20 @@ class Animal:
         self.sound = sound
 
     def eat(self):
-        return print(self.food)
+        return self.food
 
     def sounds(self):
-        return print(self.sound)
+        return self.sound
 
-dog = Animal("Food", "Barks")
-cat = Animal("Food", "Meow")
 
-'''
-print("==========Animal (Dog)==============")
-dog.eat()
-dog.sounds()
+if __name__ == "__main__":
+    dog = Animal("Food", "Barks")
+    cat = Animal("Food", "Meow")
 
-print("==========Animal (Cat)==============")
-cat.eat()
-cat.sounds()
-'''
+    print("==========Animal (Dog)==============")
+    print(dog.eat())
+    print(dog.sounds())
+
+    print("==========Animal (Cat)==============")
+    print(cat.eat())
+    print(cat.sounds())
